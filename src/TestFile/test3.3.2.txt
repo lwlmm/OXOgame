@@ -1,0 +1,10 @@
+In OXOGame.java:
+OXOModel model = new OXOModel(6,6,6);
+model.addPlayer(new OXOPlayer('Y'));
+
+In OXOModel.java:
+players = new OXOPlayer[3];
+
+b2
+a1
+abc99

@@ -1,0 +1,13 @@
+In OXOGame.java:
+OXOModel model = new OXOModel(5,5,4);
+
+In OXOModel.java:
+players = new OXOPlayer[2];
+
+b2
+a3
+b3
+c3
+b4
+e4
+b5

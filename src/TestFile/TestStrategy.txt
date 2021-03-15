@@ -1,0 +1,50 @@
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||    Test Strategy    |||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+1. Winning Test
+    1.1 Two players with 3*3 and 3 winning threshold
+        1.1.1 Winner X in row
+        1.1.2 Winner X in column
+        1.1.3 Winner X in diagonal
+        1.1.4 Winner O in diagonal
+    1.2 Two players with 5*5 and 4 winning threshold
+        1.2.1 Winner X in row
+        1.2.2 Winner O in column
+        1.2.3 Winner O in diagonal
+    1.3 Three players with 9*9 and 5 winning threshold
+        1.3.1 Winner X in row
+        1.3.2 Winner O in column
+        1.3.3 Winner Y in diagonal
+
+2. Drawn Test
+    2.1 Two players
+        2.1.1 Draw with 3*3 and 3 winning threshold
+        2.1.2 Draw with 3*3 and 4 winning threshold
+        2.1.3 Draw with 4*4 and 4 winning threshold
+        2.1.4 Draw with 5*5 and 5 winning threshold
+    2.2 More players
+        2.2.1 3 Draw with 3*3 and 3 winning threshold
+        2.2.2 3 Draw with 4*4 and 4 winning threshold
+        2.2.3 4 Draw with 4*4 and 4 winning threshold
+        2.2.4 4 Draw with 6*6 and 9 winning threshold
+
+3. Exception Test
+    3.1 Cell taken
+        3.1.1 O trying to take X's cell in move 2
+        3.1.2 O trying to take X's cell in move 4
+        3.1.3 X trying to take X's cell in move 3
+        3.1.4 O trying to take O's cell in move 6
+        3.1.5 Y trying to take X's cell in move 3
+    3.2 Out of bounds
+        3.2.1 X with row out of bounds in 3*3
+        3.2.2 O with column out of bounds in 3*3
+        3.2.3 X with both out of bounds in 4*4
+        3.2.4 Y with both out of bounds in 5*5
+    3.3 Invalid length
+        3.3.1 X with length 3 input in 3*3
+        3.3.2 Y with length 5 input in 6*6
+    3.4 Invalid characters
+        3.4.1 X with 1a input in 3*3
+        3.4.2 O with dd input in 5*5
+        3.4.3 Y with 44 input in 6*6
